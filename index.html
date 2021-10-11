@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Food App</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Nutrition</h1>
+    </header>
+
+    <div class="snackbar"></div>
+
+    <div class="new-food-form container">
+      <h2>Create New Food Card</h2>
+      <form>
+        <label for="food">Name of the Food</label>
+        <input type="text" id="food" /><br />
+        <label for="carbs">Carbs in 100g</label>
+        <input type="number" id="carbs" />
+        <label for="proteins">Proteins in 100g</label>
+        <input type="number" id="proteins" />
+        <label for="fats">Fats in 100g</label>
+        <input type="number" id="fats" />
+        <label for="amount">Amount in grams</label>
+        <input type="number" id="amount" />
+        <input type="button" value="Create New Food" id="create-food-card" />
+      </form>
+    </div>
+
+    <div class="select-food container">
+      <h2>Select Your Food</h2>
+      <select name="food" id="food-selector"></select>
+      <canvas id="nutrients-chart" width="600" height="200"></canvas>
+      <button id="select-food">Select This Food</button>
+    </div>
+
+    <div class="log container">
+      <h2>Log</h2>
+
+      <p>Total calories logged: <b id="total">0</b></p>
+    </div>
+
+    <div id="food-cards" class=""></div>
+  </body>
+  <script type="module" src="index.js"></script>
+</html>

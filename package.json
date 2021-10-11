@@ -1,0 +1,21 @@
+{
+  "name": "foodapp",
+  "version": "1.0.0",
+  "description": "HBC first period assigment",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "chart.js": "^3.5.1",
+    "snackbar": "^1.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tero Mäntylä",
+  "license": "ISC"
+}

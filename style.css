@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(250, 255, 250);
+  color: rgb(38, 62, 16);
+}
+
+header {
+  height: 80px;
+  background-color: rgb(130, 216, 0);
+  color: white;
+  padding: 20px 20px;
+}
+
+h1 {
+  color: white;
+  margin-left: 40px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+.container {
+  background-color: honeydew;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 10px;
+  margin-left: 40px;
+  max-width: 700px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Add Food Form ------------------------------------------------ */
+
+.new-food-form {
+  min-width: 450px;
+}
+
+label,
+input {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  margin: 5px 0px;
+}
+
+.new-food-form label {
+  width: 39%;
+}
+
+.new-food-form input {
+  width: 60%;
+  padding: 8px;
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 2px;
+}
+
+.new-food-form input[type="button"] {
+  all: unset;
+  display: block;
+  background-color: rgb(130, 216, 0);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.new-food-form input[type="button"]:hover {
+  transform: translate(1px, -1px);
+}
+
+/* Select Your Food ------------------------------------------------ */
+
+#food-selector {
+  display: block;
+  padding: 8px;
+}
+
+#select-food {
+  all: unset;
+  display: block;
+  background-color: coral;
+  color: white;
+  width: 150px;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+
+#select-food button:hover {
+  transform: translate(1px, -1px);
+}
+
+/* Cards -------------------------------------------------------------- */
+
+#food-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin-left: 40px;
+}
+.card {
+  width: 335px;
+  background-color: ivory;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+.card > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card div div {
+  padding: 5px;
+  margin: 5px;
+}
+
+.card p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.card div p {
+  margin-bottom: 5px;
+}
+
+.snackbar {
+  display: inline-block;
+  position: fixed;
+  background: #22ac00;
+  color: #f1f1f1;
+  min-height: 50px;
+  min-width: 290px;
+  padding: 16px 24px 12px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 5px;
+  top: 4rem;
+  left: 20rem;
+  font-size: 90%;
+  transition: visibility 0.3s, transform 0.3s;
+  transform: translateY(-100px);
+  visibility: hidden;
+  will-change: transform;
+}
+
+.snackbar--visible {
+  visibility: visible;
+  transform: none;
+}
